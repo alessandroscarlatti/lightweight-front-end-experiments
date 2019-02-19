@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="stuff/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="stuff/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="stuff/favicon-16x16.png">
+  <link rel="manifest" href="stuff/site.webmanifest">
+  <link rel="mask-icon" href="stuff/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff"> -->
+  <!-- <link rel="icon" href="icon128x128.ico" sizes="128x128"> -->
+  <!-- <link rel="icon" href="icon64x64.ico" sizes="64x64"> -->
+  <!-- <link rel="icon" href="icon48x48.ico" sizes="48x48"> -->
+  <!-- <link rel="icon" href="icon32x32.ico" sizes="32x32"> -->
+  <!-- <link rel="icon" href="icon16x16.ico" sizes="16x16"> -->
+  <!-- <link rel="icon" href="favicon2.png" type="image/png" sizes="128x128"> -->
+  <!-- <link rel="icon" href="favicon3.png" type="image/png" sizes="64x64"> -->
+  <link rel="icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Chrome App</h1>
+    <p>Run a command?</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-danger" onclick="runCommand()">Run Command?</button>
+      </div>
+      <div class="col-sm-4">
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    var ws;
+
+    function runCommand() {
+      console.log("run command.");
+      ws.send(JSON.stringify({
+        type: "NOOP"
+      }));
+    }
+
+    (function () {
+      ws = new WebSocket("ws://pc-PC:8080/ws")
+
+      ws.onmessage = function (message) {
+        console.log("received message", message);
+      }
+    })();
+  </script>
+</body>
+
+</html>

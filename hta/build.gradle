@@ -1,0 +1,17 @@
+task runHta(type: Exec) {
+    workingDir(project.projectDir)
+    commandLine("cmd", "/c", "thing.bat")
+}
+
+task runHta2 {
+    doLast {
+        new ByteArrayOutputStream().withStream { output ->
+            def result = exec {
+                workingDir(project.projectDir)
+                commandLine("cmd", "/c", "thing.bat")
+                standardOutput = output
+            }
+            println "result" + output.toString()
+        }
+    }
+}

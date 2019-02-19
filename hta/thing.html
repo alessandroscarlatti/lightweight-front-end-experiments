@@ -1,0 +1,134 @@
+<!-- :: Batch section
+@echo off
+setlocal
+
+echo *****************************
+echo ** Cool Utility            **
+echo *****************************
+echo.
+echo *******
+echo ** Running...
+echo **
+echo.
+
+for /F "delims=" %%a in ('mshta.exe "%~F0"') do set "HTAreply=%%a"
+
+echo *******
+echo ** Exiting with code "%HTAreply%"
+echo **
+echo.
+goto :EOF
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HTA Application</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- <hta:application icon="http://stackoverflow.com/favicon.ico"> -->
+	<hta:application icon="magnify.exe">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="favicon" href="http://stackoverflow.com/favicon.ico">
+		<script type="text/javascript">
+
+			function doSomething() {
+				alert("hey!");
+			}
+
+			function getSomeInput() {
+				var input = prompt("Provide some input", "some input");
+				alert("received input: " + input);
+			}
+
+			function exitAppReturningValue(value) {
+				try {
+					var fso = new ActiveXObject("Scripting.FileSystemObject");
+					fso.GetStandardStream(1).WriteLine(value);
+					window.close();
+				} catch (e) {
+					alert("Error:", e);
+				}
+			}
+
+			var selectedOptionIds = []
+
+			function exitWithOptions() {
+				exitAppReturningValue("selectedOptions=" + selectedOptionIds);
+			}
+
+			function selectOptionById(optionId) {
+				if (selectedOptionIds.indexOf(optionId) === -1) {
+					selectedOptionIds[selectedOptionIds.length] = optionId
+				}
+			}
+		</script>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+		<h1>Run Some Things</h1>
+		<p>Make a selection.</p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3/>
+			<div class="col-sm-6">
+				<form>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" onclick="selectOptionById(1)" value=""/>Option 1</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" onclick="selectOptionById(2)" value=""/>Option 2</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" onclick="selectOptionById(3)" value=""/>Option 3</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"  onclick="selectOptionById(4)" value=""/> Option 4
+						</label>
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-3"/>
+		</div>
+		<div class="row">
+			<p></p>
+			<div class="btn btn-danger" onclick="exitWithOptions()">
+				Close
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+			(function() {
+				// remove hta?
+				alert("asdf")
+	
+				var body = document.getElementsByTagName("body")[0];
+				var html = document.getElementsByTagName("html")[0];
+				var hta = document.getElementsByTagName("hta:application")[0];
+	
+				for (var i = hta.childNodes.length - 1; i >= 0; i--) {
+					console.log("removing child", hta.childNodes[i]);
+					var child = hta.childNodes[i];
+					child.parentNode.removeChild(child);
+					body.appendChild(child)
+				}
+	
+				// hta.parentNode.removeChild(hta);
+				// html.appendChild(body);
+				
+			})();
+		</script>
+</body>
+
+</html>

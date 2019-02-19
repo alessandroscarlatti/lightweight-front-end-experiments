@@ -1,0 +1,12 @@
+
+C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\hta>echo hello world! 
+hello world!
+
+C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\hta>(timeout /t 5   || ping -n 2 localhost  1>nul ) 2>nul 
+
+Waiting for 5 seconds, press a key to continue ...43210
+
+C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\hta>echo stuff 
+stuff
+
+C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\hta>exit /b 12345 

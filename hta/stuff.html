@@ -1,0 +1,69 @@
+<!-- :: Batch section
+@echo off
+setlocal
+
+echo Select an option:
+for /F "delims=" %%a in ('mshta.exe "%~F0"') do set "HTAreply=%%a"
+echo End of HTA window, reply: "%HTAreply%"
+goto :EOF
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<HTA:APPLICATION ICON="icon.png">
+		<title>App</TITLE>
+		<meta http-equiv="x-ua-compatible" content="ie=9">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		 crossorigin="anonymous">
+		<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+		<script type="text/javascript">
+			//window.resizeTo(374,100);
+
+			function closeHTA(reply) {
+				var fso = new ActiveXObject("Scripting.FileSystemObject");
+				fso.GetStandardStream(1).WriteLine(reply);
+				window.close();
+			}
+
+			function doSomething() {
+				alert("hey!");
+			}
+
+		</script>
+</head>
+
+<body style="border: 2px solid blue;" class="">
+
+	<div class="jumbotron text-center">
+		<h1>My First Bootstrap Page</h1>
+		<p>Resize this responsive page to see the effect!</p>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<button class="btn btn-primary" onclick="closeHTA(1);">First option</button>
+			<button class="btn btn-secondary" onclick="closeHTA(2);">Second option</button>
+			<button class="btn btn-secondary" onclick="closeHTA(3);">Third option</button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="alert alert-primary" role="alert">
+			A simple primary alert--check it out!
+		</div>
+	</div>
+
+	<div class="row">
+		<button class="btn btn-warning" onclick="closeHTA(1);">Exit</button>
+	</div>
+	<div class="row">
+		<button class="btn btn-primary" onclick="doSomething()">
+			Do Something
+		</button>
+	</div>
+</body>
+
+</html>

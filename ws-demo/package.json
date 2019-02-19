@@ -1,0 +1,28 @@
+{
+  "name": "ws-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "webpack -p",
+    "bundleServer": "webpack -p --config webpack.config.server.js",
+    "bundleServerSeparateDependencies": "webpack --config webpack.config.server.dependencies.js",
+    "bundleServerBase": "webpack --config webpack.config.server.base.js",
+    "package": "cat bundle.js | node node_modules/nexe -o client.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "webpack": "^4.29.4",
+    "webpack-node-externals": "^1.7.2",
+    "ws": "^6.1.4"
+  },
+  "devDependencies": {
+    "nexe": "^2.0.0-rc.34",
+    "pkg": "^4.3.7",
+    "webpack-cli": "^3.2.3"
+  }
+}
