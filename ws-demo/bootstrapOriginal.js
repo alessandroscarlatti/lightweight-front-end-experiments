@@ -15,5 +15,5 @@ function dpRequire(moduleName) {
 }
 
 // now load the main server and pass the dependencies
-const serverMain = nativeRequire('./serverMain');
-serverMain(dpRequire);
+const serverMain = nativeRequire('./main');
+serverMain(dpRequire, nativeRequire);

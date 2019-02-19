@@ -1,8 +1,8 @@
 module.exports = {
   target: "node",
-  entry: './serverBase.js',
+  entry: './bootstrapOriginal.js',
   output: {
-    filename: 'serverBaseBundle.js',
+    filename: 'bootstrap.js',
     path: __dirname
   },
   node: {
@@ -11,7 +11,7 @@ module.exports = {
   module: {
     noParse: /native-require.js$/
   },
-  optimization: {
-    minimize: false
-  }
+  // optimization: {
+  //   minimize: false  // don't uglify
+  // }
 };

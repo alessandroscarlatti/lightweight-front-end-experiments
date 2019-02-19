@@ -5,15 +5,19 @@
  * static content locations:
  */
 
-module.exports = function(require) {
+module.exports = function(dpRequire, require) {
 
     console.log("running server main!");
 
-    const spawn = require('child_process').spawn;
-    const fs = require('fs');
-    const SocketServer = require('ws').Server;
-    var express = require('express');
-    var path = require('path');
+    const stuff = require("./stuff");
+    
+    console.log(stuff);
+
+    const spawn = dpRequire('child_process').spawn;
+    const fs = dpRequire('fs');
+    const SocketServer = dpRequire('ws').Server;
+    var express = dpRequire('express');
+    var path = dpRequire('path');
     
     var connectedUsers = [];
     //init Express
