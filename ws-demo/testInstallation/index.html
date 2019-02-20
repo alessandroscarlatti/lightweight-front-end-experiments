@@ -35,9 +35,10 @@
       <div class="col-sm-4">
       </div>
       <div class="col-sm-4">
-        <button class="btn btn-danger" onclick="runCommand()">Run Command?</button>
+        <button class="btn btn-danger" onclick="runNoop()">Run Noop?</button>
       </div>
       <div class="col-sm-4">
+        <button class="btn btn-danger" onclick="runCommand()">Run Command?</button>
       </div>
 
     </div>
@@ -51,12 +52,22 @@
     function runCommand() {
       console.log("run command.");
       ws.send(JSON.stringify({
+        type: "COMMAND",
+        executable: "test.bat",
+        args: []
+      }));
+    }
+
+    function runNoop() {
+      console.log("run command.");
+      ws.send(JSON.stringify({
         type: "NOOP"
       }));
     }
 
     (function () {
-      ws = new WebSocket("ws://pc-PC:8080/ws")
+      // todo make this part dynamic...
+      ws = new WebSocket(((window.location.protocol === "https:") ? "wss://" : "ws://") + window.location.host + "/ws");
 
       ws.onmessage = function (message) {
         console.log("received message", message);
