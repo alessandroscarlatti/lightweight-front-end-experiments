@@ -1,9 +1,13 @@
+let _messageBusIdCounter = 0;
+
 class MessageBus {
 
     constructor() {
         this._functionPointerLib = {};
         this._functionPointerCounter = 0;
         this._createProxySubscriber();
+        this._id = "MessageBus@" + _messageBusIdCounter;
+        _messageBusIdCounter++;
     }
 
     set otherMessageBus(otherMessageBus) {
@@ -84,7 +88,7 @@ class MessageBus {
      * @param {Object} message
      */
     onMessage(message) {
-        console.log("message received", message);
+        console.log(this._id + " received message", message);
 
         // declare function library
         let functionLibrary = {};
@@ -126,6 +130,15 @@ class MessageBus {
                 case "string":
                     arg = String(objArg.value);
                     break;
+                case "number":
+                    arg = Number(objArg.value);
+                    break;
+                case "boolean":
+                    arg = Boolean(objArg.value);
+                    break;
+                case "json":
+                    arg = JSON.parse(objArg.value);
+                    break;
                 default:
                     throw new Error("Unhandled argument type: " + objArg.type);
             }
@@ -162,6 +175,21 @@ class MessageBus {
                     type: "function",
                     name: functionPointerName
                 });
+            } else if (typeof arg === "number") {
+                dehydratedArgs.push({
+                    type: "number",
+                    value: arg
+                });
+            } else if (typeof arg === "boolean") {
+                dehydratedArgs.push({
+                    type: "boolean",
+                    value: arg
+                })
+            } else if (typeof arg === "object") {
+                dehydratedArgs.push({
+                    type: "json",
+                    value: JSON.stringify(arg)
+                })
             } else {
                 throw new Error("Unsupported argument type for arg: " + arg)
             }
@@ -170,8 +198,11 @@ class MessageBus {
     }
 
     _send(message) {
-        console.log("sending message", message);
-        this._otherMessageBus.onMessage(message);
+        // simulate network latency
+        setTimeout(() => {
+            console.log(this._id + " sending message", message);
+            this._otherMessageBus.onMessage(message);
+        }, 500);
     }
 }
 
