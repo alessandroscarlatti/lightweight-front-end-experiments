@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mumbo App</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="/static/favicon.png" type="image/png" sizes="64x64">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/libs/bootstrap.min.css">
+    <script crossorigin src="/static/libs/react.development.js"></script>
+    <script crossorigin src="/static/libs/react-dom.development.js"></script>
+    <script src="/static/libs/babel.min.js"></script>
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+    <!-----------------------      FRONT END APPLICATION FUNCTIONS           ------------------>
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+    <script src="/static/libs/messageBus.js"></script>
+	<script>
+		/**
+		 * Connect the front-end to the back end via websocket.
+		 */
+		function initWs(app) {
+			// build url
+			let key = new URLSearchParams(window.location.search).get("k");
+			let protocol = (window.location.protocol === "https:") ? "wss" : "ws";
+			let url = `${protocol}://${window.location.host}/ws/${key}`;
+
+			// connect to back-end websocket.
+			console.log("Connecting to server: ", url);
+			let ws = new WebSocket(url);
+
+			// build message bus and connect front-end to back-end.
+			let messageBus = new MessageBus();
+			messageBus.send = (message) => ws.send(message);
+			ws.onmessage = function (message) {
+				console.log("received message", message);
+				messageBus.receive(message.data);
+			};
+
+			// inject the server reference
+			app.server = messageBus.publisher;
+			messageBus.subscriber = app;
+		}
+	</script>
+
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+    <!-----------------------              REACT APPLICATION UI              ------------------>
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+
+    <script src="/static/app.js" type="text/babel"></script>
+</head>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!-----------------------              HTML APPLICATION UI               ------------------>
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<body>
+<div id="root"></div>
+<script src="/static/main.js" type="text/babel"></script>
+</body>
+
+</html>

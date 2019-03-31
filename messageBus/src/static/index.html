@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mumbo App</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="/static/favicon.png" type="image/png" sizes="64x64">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+    <script src="/static/messageBus.js"></script>
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+    <!-----------------------      FRONT END APPLICATION FUNCTIONS           ------------------>
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+    <script>
+        class App {
+            set server(server) {
+                this._server = server;
+            }
+
+            doSomething() {
+                alert("Autoalert");
+            }
+
+            /**
+             * These are the front end application functions.
+             */
+            println() {
+                this._server.println("stuff");
+            }
+
+            doSomethingThenAlert() {
+                this._server.doSomethingThenAlert({
+                    alert: (text) => {
+                        alert(text);
+                    },
+                    alert2: (text) => {
+                        alert("alert2:" + text);
+                    }
+                });
+            }
+
+            runShellCommand1() {
+                this._server.runShellCommand1({
+                    started: function () {
+                        console.log("started.");
+                    },
+
+                    stdout: function (text) {
+                        console.log("STDOUT", text);
+                    },
+
+                    completed: function () {
+                        console.log("completed.");
+                    },
+
+                    failed: function () {
+                        console.log("failed.");
+                    }
+                });
+            }
+        }
+
+        var app = new App();
+    </script>
+
+
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+    <!-----------------------              REACT APPLICATION UI              ------------------>
+    <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
+
+    <script type="text/babel">
+        class Greeting extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <div>Hello world</div>
+                        <button onClick={app.println.bind(app)}>Println!</button>
+                        <button onClick={app.doSomethingThenAlert.bind(app)}>Do Something Then Alert!</button>
+                        <button onClick={app.runShellCommand1.bind(app)}>Run Bat 1</button>
+                    </div>
+                );
+            }
+        }
+    </script>
+</head>
+
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+<!-----------------------              HTML APPLICATION UI               ------------------>
+<!----------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------->
+
+<body>
+<div id="root"></div>
+<script>
+    /**
+     * Connect the front-end to the back end via websocket.
+     * Sets the "backend" variable.
+     */
+    function initWs() {
+        // build url
+        let key = new URLSearchParams(window.location.search).get("k");
+        let protocol = (window.location.protocol === "https:") ? "wss" : "ws";
+        let url = `${protocol}://${window.location.host}/ws/${key}`;
+
+        // connect to back-end websocket.
+        console.log("Connecting to server: ", url);
+        let ws = new WebSocket(url);
+
+        // build message bus and connect front-end to back-end.
+        let messageBus = new MessageBus();
+        messageBus.send = (message) => ws.send(message);
+        ws.onmessage = function (message) {
+            console.log("received message", message);
+            messageBus.receive(message.data);
+        };
+
+        // inject the server reference
+        app.server = messageBus.publisher;
+        messageBus.subscriber = app;
+    }
+</script>
+<script type="text/babel">
+    /**
+     * Load React and connect to the backend.
+     */
+    ReactDOM.render(<Greeting/>, document.getElementById('root'));
+    initWs();
+</script>
+</body>
+
+</html>

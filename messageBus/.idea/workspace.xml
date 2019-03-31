@@ -10,39 +10,53 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="messageBus.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/messageBus.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="300">
-                    <caret line="98" column="43" lean-forward="false" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="messageBus.test.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/messageBus.test.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="128" column="57" lean-forward="true" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
+            <state relative-caret-position="272">
+              <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="125" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1768">
+              <caret line="104" column="24" lean-forward="false" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>othermessagebus</find>
+      <find>this._send</find>
+      <find>send(</find>
+      <find>,</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -108,8 +122,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/messageBusWebSocket.test.js" />
+        <option value="$PROJECT_DIR$/src/webSocketPublisherImpl.js" />
+        <option value="$PROJECT_DIR$/src/serverTest.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/static/messageBus.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/webpack.config.web.js" />
         <option value="$PROJECT_DIR$/src/messageBus.js" />
         <option value="$PROJECT_DIR$/src/messageBus.test.js" />
+        <option value="$PROJECT_DIR$/start.bat" />
+        <option value="$PROJECT_DIR$/src/doSomething.bat" />
+        <option value="$USER_HOME$/JavascriptProjects/mumbo/dist/main.js" />
+        <option value="$PROJECT_DIR$/src/start.bat" />
+        <option value="$PROJECT_DIR$/src/utils.js" />
+        <option value="$PROJECT_DIR$/src/app.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/static/index.html" />
       </list>
     </option>
   </component>
@@ -125,11 +155,12 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="73" />
-    <option name="y" value="-8" />
+    <option name="x" value="-8" />
+    <option name="y" value="32" />
     <option name="width" value="1296" />
-    <option name="height" value="1040" />
+    <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -145,6 +176,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,28 +187,30 @@
               <item name="messageBus" type="b2602c69:ProjectViewProjectNode" />
               <item name="messageBus" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="messageBus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="messageBus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_102/bin/jvisualvm.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/pc/Desktop/FindAndReplaceFromCommandLine/messageBus/src/messageBus.test.js" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\messageBus" />
+      <recent name="C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\messageBus\src\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\messageBus\src\static" />
+      <recent name="C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\messageBus\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.Message Bus.invoke function with deep array">
+  <component name="RunManager" selected="Node.js.main.js">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -207,6 +244,15 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="start" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\pc\Desktop\FindAndReplaceFromCommandLine\messageBus\src" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="messageBus" />
+      <option name="SCRIPT_NAME" value="start.bat" />
+      <option name="PARAMETERS" value="" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -228,6 +274,7 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="main.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="$PROJECT_DIR$/src/main.js" working-dir="$PROJECT_DIR$/src" />
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -268,7 +315,16 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration name="Message Bus.call function with callback with callback!" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+    <configuration name="build-web" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-web" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+    </configuration>
+    <configuration name="Message Bus" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
@@ -276,14 +332,13 @@
       <envs />
       <ui>bdd</ui>
       <extra-mocha-options />
-      <test-kind>TEST</test-kind>
+      <test-kind>SUITE</test-kind>
       <test-file>$PROJECT_DIR$/src/messageBus.test.js</test-file>
       <test-names>
         <name value="Message Bus" />
-        <name value="call function with callback with callback!" />
       </test-names>
     </configuration>
-    <configuration name="Message Bus.call function with callback" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+    <configuration name="Message Bus.stores only the specified number of function pointers" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
@@ -295,68 +350,23 @@
       <test-file>$PROJECT_DIR$/src/messageBus.test.js</test-file>
       <test-names>
         <name value="Message Bus" />
-        <name value="call function with callback" />
-      </test-names>
-    </configuration>
-    <configuration name="Message Bus.invoke dyadic function with number and boolean" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/src/messageBus.test.js</test-file>
-      <test-names>
-        <name value="Message Bus" />
-        <name value="invoke dyadic function with number and boolean" />
-      </test-names>
-    </configuration>
-    <configuration name="Message Bus.invoke function with deep array" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/src/messageBus.test.js</test-file>
-      <test-names>
-        <name value="Message Bus" />
-        <name value="invoke function with deep array" />
-      </test-names>
-    </configuration>
-    <configuration name="Message Bus.invoke function with deep object" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/src/messageBus.test.js</test-file>
-      <test-names>
-        <name value="Message Bus" />
-        <name value="invoke function with deep object" />
+        <name value="stores only the specified number of function pointers" />
       </test-names>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Mocha.Message Bus.call function with callback" />
-      <item index="1" class="java.lang.String" itemvalue="Mocha.Message Bus.invoke dyadic function with number and boolean" />
-      <item index="2" class="java.lang.String" itemvalue="Mocha.Message Bus.invoke function with deep object" />
-      <item index="3" class="java.lang.String" itemvalue="Mocha.Message Bus.call function with callback with callback!" />
-      <item index="4" class="java.lang.String" itemvalue="Mocha.Message Bus.invoke function with deep array" />
+      <item index="0" class="java.lang.String" itemvalue="Mocha.Message Bus" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.main.js" />
+      <item index="2" class="java.lang.String" itemvalue="npm.build-web" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.Message Bus.stores only the specified number of function pointers" />
+      <item index="4" class="java.lang.String" itemvalue="Batch.start" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Mocha.Message Bus.invoke function with deep array" />
-        <item index="1" class="java.lang.String" itemvalue="Mocha.Message Bus.call function with callback with callback!" />
-        <item index="2" class="java.lang.String" itemvalue="Mocha.Message Bus.call function with callback" />
-        <item index="3" class="java.lang.String" itemvalue="Mocha.Message Bus.invoke function with deep object" />
-        <item index="4" class="java.lang.String" itemvalue="Mocha.Message Bus.invoke dyadic function with number and boolean" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.main.js" />
+        <item index="1" class="java.lang.String" itemvalue="Batch.start" />
+        <item index="2" class="java.lang.String" itemvalue="Mocha.Message Bus.stores only the specified number of function pointers" />
+        <item index="3" class="java.lang.String" itemvalue="Mocha.Message Bus" />
+        <item index="4" class="java.lang.String" itemvalue="npm.build-web" />
       </list>
     </recent_temporary>
   </component>
@@ -373,80 +383,105 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550902770602</updated>
-      <workItem from="1550902775494" duration="11091000" />
+      <workItem from="1550902775494" duration="12697000" />
+      <workItem from="1553963799512" duration="25119000" />
+      <workItem from="1554073002958" duration="667000" />
     </task>
+    <task id="LOCAL-00001" summary="refine rpc">
+      <created>1553977365300</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553977365300</updated>
+    </task>
+    <task id="LOCAL-00002" summary="separate stuff">
+      <created>1553984015118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553984015118</updated>
+    </task>
+    <task id="LOCAL-00003" summary="improve injection">
+      <created>1554007221891</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554007221891</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Message_Bus_call_function_with_callback - 2019.02.23 at 15h 18m 57s.xml">
-      <configuration name="Message Bus.call function with callback" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus - 2019.03.30 at 15h 37m 18s.xml">
+      <configuration name="Message Bus" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_call_function_with_callback_with_callback! - 2019.02.23 at 15h 16m 46s.xml">
-      <configuration name="Message Bus.call function with callback with callback!" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_call_with_an_array - 2019.03.30 at 14h 34m 04s.xml">
+      <configuration name="Message Bus.call with an array" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_call_function_with_callback_with_callback! - 2019.02.23 at 15h 18m 18s.xml">
-      <configuration name="Message Bus.call function with callback with callback!" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_call_with_an_array - 2019.03.30 at 14h 34m 15s.xml">
+      <configuration name="Message Bus.call with an array" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_call_function_with_callback_with_callback! - 2019.02.23 at 15h 19m 09s.xml">
-      <configuration name="Message Bus.call function with callback with callback!" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_stores_only_the_specified_number_of_function_pointers - 2019.03.30 at 15h 41m 02s.xml">
+      <configuration name="Message Bus.stores only the specified number of function pointers" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_call_function_with_callback_with_callback! - 2019.02.23 at 15h 19m 41s.xml">
-      <configuration name="Message Bus.call function with callback with callback!" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_stores_only_the_specified_number_of_function_pointers - 2019.03.30 at 15h 41m 34s.xml">
+      <configuration name="Message Bus.stores only the specified number of function pointers" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_call_function_with_callback_with_callback! - 2019.02.23 at 15h 21m 41s.xml">
-      <configuration name="Message Bus.call function with callback with callback!" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_stores_only_the_specified_number_of_function_pointers - 2019.03.30 at 15h 42m 05s.xml">
+      <configuration name="Message Bus.stores only the specified number of function pointers" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_call_function_with_callback_with_callback! - 2019.02.23 at 15h 31m 44s.xml">
-      <configuration name="Message Bus.call function with callback with callback!" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_stores_only_the_specified_number_of_function_pointers - 2019.03.30 at 15h 43m 18s.xml">
+      <configuration name="Message Bus.stores only the specified number of function pointers" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_call_function_with_callback_with_callback! - 2019.02.23 at 15h 32m 05s.xml">
-      <configuration name="Message Bus.call function with callback with callback!" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_stores_only_the_specified_number_of_function_pointers - 2019.03.30 at 15h 43m 41s.xml">
+      <configuration name="Message Bus.stores only the specified number of function pointers" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_invoke_function_with_deep_array - 2019.02.23 at 15h 33m 57s.xml">
-      <configuration name="Message Bus.invoke function with deep array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_stores_only_the_specified_number_of_function_pointers - 2019.03.30 at 15h 44m 00s.xml">
+      <configuration name="Message Bus.stores only the specified number of function pointers" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="Message_Bus_invoke_function_with_deep_array - 2019.02.23 at 15h 34m 07s.xml">
-      <configuration name="Message Bus.invoke function with deep array" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="Message_Bus_stores_only_the_specified_number_of_function_pointers - 2019.03.30 at 15h 48m 11s.xml">
+      <configuration name="Message Bus.stores only the specified number of function pointers" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11091000" />
+    <option name="totallyTimeSpent" value="38483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45433527" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43583816" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18527508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18851133" sideWeight="0.50404626" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45086706" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19174758" sideWeight="0.49595377" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,9 +490,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refine rpc" />
+    <MESSAGE value="separate stuff" />
+    <MESSAGE value="improve injection" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve injection" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="30" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/messageBus.test.js</url>
+          <line>299</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -518,26 +566,166 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/assert/assert.js">
+    <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="244" column="0" lean-forward="false" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/messageBus.js">
+    <entry file="file://$PROJECT_DIR$/src/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="98" column="43" lean-forward="false" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
+        <state relative-caret-position="289">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/messageBus.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="128" column="57" lean-forward="true" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/assert/assert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="244" column="0" lean-forward="false" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messageBusWebSocket.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/webSocketPublisherImpl.js" />
+    <entry file="file://$PROJECT_DIR$/src/serverTest.js" />
+    <entry file="file://$PROJECT_DIR$/src/mumbo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="82" column="17152" lean-forward="false" selection-start-line="82" selection-start-column="17152" selection-end-line="82" selection-end-column="17152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="true" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messageBus.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/messageBus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.web.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/messageBus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messageBus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/messageBus.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3383">
+          <caret line="277" column="77" lean-forward="true" selection-start-line="277" selection-start-column="77" selection-end-line="277" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/start.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/doSomething.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/start.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/JavascriptProjects/mumbo/dist/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="104" column="24" lean-forward="false" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="125" selection-end-column="36" />
           <folding />
         </state>
       </provider>
